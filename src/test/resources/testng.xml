@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="API Automation Suite">
+    <test name="Reqres Automation Test">
+        <classes>
+            <class name="apiauto.TestReqres"/>
+        </classes>
+    </test>
+
+</suite>

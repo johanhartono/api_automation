@@ -45,10 +45,10 @@ jobs:
     #   with:
     #     gradle-version: '8.5'
     #
-    - name: gradle init
-      run: gradle init
-    - name: Build with Gradle 8.5
-      run: gradle build
+    #- name: gradle init
+    #  run: gradle init
+    - name: run gradle wrapper
+      run: gradle wrapper
 
   dependency-submission:
 

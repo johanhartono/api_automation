@@ -14,11 +14,15 @@ public class TestReqres {
     @Test
     public void testGetListUsers() {
         given().when()
-                .get("https://reqres.in/api/users?page-2")
+                .get("https://reqres.in/api/users?page-1")
                 .then().log().all()
+                //memvalidasi kode status response
                 .assertThat().statusCode(200)
+                .assertThat().body("total", Matchers.equalTo( 12))
                 .assertThat().body("per_page", Matchers.equalTo( 6))
-                .assertThat().body("page", Matchers.equalTo( 1));
+                .assertThat().body("page", Matchers.equalTo( 1))
+                .assertThat().body("total_pages", Matchers.equalTo( 2));
+
     }
 
     @Test

@@ -45,11 +45,13 @@ jobs:
     #   with:
     #     gradle-version: '8.5'
     #
-    #- name: gradle init
-    #  run: gradle init
     - name: run gradle wrapper
-      run: gradle wrapper
-
+      run: gradle wrapper    
+    - name: gradle init
+      run: gradle init
+    - name: Build with Gradle Wrapper
+      run: ./gradlew build
+      
   dependency-submission:
 
     runs-on: ubuntu-latest

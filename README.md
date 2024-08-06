@@ -20,7 +20,7 @@ Cara menjalankan project:
 
    ![image](https://github.com/user-attachments/assets/15f8061c-49ab-4987-a836-dc5c5f636cbe)
 
-8. Jika browser tidak otomomatis muncul makan di browser ketikkanlah alamat yang disebutkan seperti contoh diatas: **http://192.168.56.1:58127 **(anda mgkn akan mendapatkan alamat yang berbeda, sesuaikanlah dengan alamat allure anda) dan hasilnya akan seperti contoh tamplian di bawah ini.
+8. Jika browser tidak otomomatis muncul ,maka di browser ketikkanlah alamat yang disebutkan seperti contoh diatas: **http://192.168.56.1:58127 **(anda mgkn akan mendapatkan alamat yang berbeda, sesuaikanlah dengan alamat allure anda) dan hasilnya akan seperti contoh tamplian di bawah ini.
    ![image](https://github.com/user-attachments/assets/92aebeea-61bb-451a-aa09-627ceab1cb63)
 9. Jika anda mengalami kesulitan boleh menghubungi saya, siap membantu.
 10. Terima kasih

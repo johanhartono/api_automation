@@ -9,7 +9,7 @@ Operating System: Windows
 Cara menjalankan project:
 1. clone repository
 2. pastikan gradle anda sudah terinstalasi di lokal mesin anda
-3. Buka dengan IDE Kesesukaan anda, saat ini saya menggunakan IntelliDJA karena lebih user friendly dibandingakan dengan eclipse. altenatif bisa menggunakan VS Code
+3. Buka dengan IDE Kesesukaan anda, saat ini saya menggunakan IntelliDJA karena lebih user friendly jika dibandingkan dengan eclipse. altenatif bisa menggunakan VS Code
 4. Synchonkan dependencies anda dengan build.gradle (Kebetulan saya menggunakan intelliDJA, tinggal klik tombol play button)
 5. Jalankan project melalui IDE kesukaan anda.
 6. Untuk testing secara CLI , masuk ke command prompt dan bisa menjalankan perintah didalam project  **.gradlew clean test** sehingga menyerupai tampilan dibawah ini

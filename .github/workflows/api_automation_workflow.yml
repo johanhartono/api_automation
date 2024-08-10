@@ -35,7 +35,7 @@ jobs:
       uses: actions/download-artifact@v4.1.8
       with:
         # Name of the artifact to download. If unspecified, all artifacts for the run are downloaded.
-        name: api_automation
+        name: API Automation Workflow
         # Destination path. Supports basic tilde expansion. Defaults to $GITHUB_WORKSPACE
         path: $GITHUB_WORKSPACE
         # The repository owner and the repository name joined together by "/". If github-token is specified, this is the repository that artifacts will be downloaded from.

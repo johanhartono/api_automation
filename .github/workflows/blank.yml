@@ -1,0 +1,32 @@
+name: API Automation Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    # download repo
+    - uses: actions/checkout@v4
+
+    # setup java
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+    # install browser
+    - name: Setup Chrome
+      uses: browser-actions/setup-chrome@v1.7.2
+    # setup gradlew
+    - name: Setup gradlew
+      run: chmod +x gradlew
+    # Execute gradle command for running cucumber test
+    - name: Execute Test
+      run: ./gradlew cucumber

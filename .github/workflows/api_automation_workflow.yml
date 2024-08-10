@@ -30,16 +30,4 @@ jobs:
     # Execute gradle command for running cucumber test
     - name: Execute Test
       run: ./gradlew test
-    # Download a Build Artifact
-    - name: Download a Build Artifact
-      uses: actions/download-artifact@v4.1.8
-      with:
-        # Name of the artifact to download. If unspecified, all artifacts for the run are downloaded.
-        name: API Automation Workflow
-        # Destination path. Supports basic tilde expansion. Defaults to $GITHUB_WORKSPACE
-        path: $GITHUB_WORKSPACE
-        # The repository owner and the repository name joined together by "/". If github-token is specified, this is the repository that artifacts will be downloaded from.
-        repository:  ${{ github.repository }}
-        # The id of the workflow run where the desired download artifact was uploaded from. If github-token is specified, this is the run that artifacts will be downloaded from.
-        run-id:  ${{ github.run_id }}
-          
+
